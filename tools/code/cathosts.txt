@@ -1,0 +1,1 @@
+for i in $(cat sites.txt); do host $i; done | grep address | awk '{print $1" "$4}'

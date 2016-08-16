@@ -1,0 +1,14 @@
+#!/bin/sh
+while read SNAPSHOT_ID
+do
+	. ./cb_delete_snapshot ord $SNAPSHOT_ID
+	echo "Deleting Snapshot: " $SNAPSHOT_ID
+	DELETING=0
+	while [ $DELETING == "0" ]
+	do
+		RESULT=$(./cb_show_snapshot ord $SNAPSHOT_ID)
+        	DELETING=$(echo $RESULT | grep itemNotFound | wc -l )	
+		sleep 30
+	done
+done < cbs_to_delete.txt
+echo "It is done!"

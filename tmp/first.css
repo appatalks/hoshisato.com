@@ -1,0 +1,228 @@
+body{
+  font-family: sans-serif;
+  font-size: large;
+  background: #E3EEFF;
+  color: #00001C;
+  font-family: Helvetica, Arial, sans-serif;
+}
+a:link{
+  color: #00001C;
+  text-decoration:underline;
+}
+#cloud a:link{
+  color: #00001C;
+  text-decoration: none;
+}
+#cloud a:visited{
+  color: #00001C;
+  border: 0;
+  text-decoration: none;
+}
+a:hover{
+  font-style:italic;
+  color:red;
+}
+a:active{
+  text-decoration: none;
+  color: red;
+}
+.onlyfirst{display:none;}
+.quote{width:80%;margin-left:5%;}
+
+.weirdemph{
+  font-style:italic;
+  background:red;
+}
+
+.liheader{
+  /* Tried to copy most of h3's properties at http://www.w3.org/TR/CSS21/sample.html */
+  color:#00001C;
+  font-style:italic;
+  font-size:1.17em;
+  margin:.83em;
+  display:block;
+  font-weight:bolder;
+  page-break-after:avoid;
+}
+
+img{border:0px;}
+
+#cloud a.tag1 { font-size: 0.7em; font-weight: 100; }
+#cloud a.tag2 { font-size: 0.8em; font-weight: 200; }
+#cloud a.tag3 { font-size: 0.9em; font-weight: 300; }
+#cloud a.tag4 { font-size: 1.0em; font-weight: 400; }
+#cloud a.tag5 { font-size: 1.2em; font-weight: 500; }
+#cloud a.tag6 { font-size: 1.4em; font-weight: 600; }
+#cloud a.tag7 { font-size: 1.6em; font-weight: 700; }
+#cloud a.tag8 { font-size: 1.8em; font-weight: 800; }
+#cloud a.tag9 { font-size: 2.2em; font-weight: 900; }
+#cloud a.tag10 { font-size: 2.5em; font-weight: 900; }
+
+#cloud { padding: 2px; line-height: 3em; text-align: center;}
+#cloud a { padding: 0px; }
+
+#cloud { margin: 0; }
+#cloud li { display: inline; }
+
+.updated{visibility:hidden;}
+.date{
+  font-size: large;
+  margin-left: 10%;
+  color: #00001C;
+}
+.mydate {
+  font-size:6pt;
+  color: #00001C;
+}
+.textbig{font-size:xx-large;}
+.emph{color:red;}
+.tiny {
+  font-size: xx-small;
+}
+.small {
+  font-size: small;
+}
+.big{
+  font-size: large;
+}
+.bigg{
+  font-size: x-large;
+}
+.biggg{
+  font-size: xx-large;
+}
+.interviewer{
+  font-size:small;
+  color:blue;
+}.interviewee{
+  font-size:small;
+  color:red;
+}
+
+/* Specifically for must_see.html */
+    .length {
+      font-size:small;
+      color:red; 
+      margin-left:2em;
+    }
+
+/* Why does some of this not work.
+  a:link.backbutton{color:red;}
+  a:visited.backbutton{color:red;}
+  a:hover.backbutton{color:red;}
+  a:active.backbutton{color:red;}    */
+
+/* Specifically for math webpage */
+   .swim        {color:#33CCFF;}
+   .lecture  {color:#22bb22;}
+   .help-room   {color:#FF3333;}
+   .section     {color:#669900;}
+   .oh          {color:#CC3399;}
+   .bub         {text-align:center;valign:center;}
+   .review      {color:red;font-size:xx-large;}
+   .underdash {
+         border-bottom: 1px dashed #ccc;
+         /* border-right: 0; */
+         /* border-left: 0; */
+         /* border-top: 0; */
+   }
+   .overdash {
+         border-top: 1px dashed #ccc;
+         /* border-right: 0; */
+         /* border-left: 0; */
+         /* border-bottom: 0; */
+   }   .noborders {
+     border:0;
+   }
+   .ambient_not_there_cell {
+     color:#444444;
+     border:0px;
+     border-style:none;
+     background:#a0ddff;
+   }
+   .ambient_cell {
+     color:#444444;
+     border:0px;
+     background:#ccccff;
+   }
+   .dimmed_cell {
+     color:#444444;
+     background:#ccccff;
+   }
+   .time_cell {
+   }
+   .half_time {
+     font-size:small;
+     height:10px;
+   }
+.eemayl{
+  color: red;
+}
+
+table.cool_table{
+  border:1px solid black;
+  border-collapse:collapse;
+}
+table.cool_table_with_verts th {
+  padding-left:.5em;
+  padding-right:.5em;
+  border:1px solid black;
+  background-color:#99ff66;
+  color:black;
+}
+table.cool_table th {
+  padding-left:.5em;
+  padding-right:.5em;
+  background-color:#99ff66;
+  color:black;
+}
+table.cool_table td {
+  border-bottom: 1px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding:0px;
+  color: black;
+  text-align:center;
+}
+table.cool_table_with_verts td {
+  border: 1px solid black;
+  padding-left:.2em;
+  padding-right:.2em;
+  padding-top:0ex;
+  padding-bottom:0ex;
+  color: black;
+  text-align:center;
+}
+table.cool_table tr.d0 td, table.cool_table_with_verts tr.d0 td {
+	background-color: #eaf2d3;
+}
+table.cool_table tr.d1 td, table.cool_table_with_verts tr.d1 td {
+	background-color: #ffffff;
+}
+
+
+
+/* Spceficially for math webpage/calculators */
+.bigques {color:red;}
+.math {color:green;}
+
+/* Specifically for piracy final thought */
+.pirate {list-style-image: url(/finalthought/pirate.gif);}
+.bassli {list-style-image: url(/finalthought/FClef.gif);}
+.filmli {list-style-image: url(/finalthought/bacon.gif);}
+
+/* Specifically for pworld */
+a.verse {
+  text-decoration:none;
+}
+a.verse:hover {
+  text-decoration:underline;
+  color:#00001C;
+}
+a.verse:visited {
+  text-decoration:none;
+  color:#00001C;
+}
+
+

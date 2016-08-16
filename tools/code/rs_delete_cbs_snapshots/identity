@@ -1,0 +1,19 @@
+#!/bin/bash
+. ./apicredentials.txt
+curl -s \
+ -X POST \
+ https://auth.api.rackspacecloud.com/v2.0/tokens -d '{ "auth":{ "RAX-KSKEY:apiKeyCredentials":{ "username": "'$USERNAME'", "apiKey": "'$APIKEY'" } } }' \
+ -H "Content-type: application/json"  \
+ -D identity_response_headers.txt | python -m json.tool > /tmp/identityresponse.tmp
+while read line
+do
+	if [ $(echo $line | grep token | wc -l) == "1" ]
+	then
+		read line; read line; read line; read line; read line
+		export APITOKEN=$(echo $line | cut -d"\"" -f4)
+		read line; read line
+		export DDI=$(echo $line	| cut -d"\"" -f4)	
+	fi
+done < /tmp/identityresponse.tmp
+#cat /tmp/identityresponse.tmp | grep block
+rm -f /tmp/identityresponse.tmp

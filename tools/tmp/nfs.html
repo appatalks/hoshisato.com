@@ -1,0 +1,47 @@
+
+<pre>
+
+NFS
+http://www.howtoforge.com/setting-up-an-nfs-server-and-client-on-centos-6.3
+/etc/exports
+
+
+
+On the NFS server we run:
+yum install nfs-utils nfs-utils-lib nfs-common
+
+111 udp
+2049 tcp
+
+SELinux 
+semanage fcontext -a -t nfs_t /nfs/
+chcon -t nfs_t /nfs/
+
+MASTER
+vim /etc/exports
+/nfs                 *(rw,sync)
+/home           192.168.0.101(rw,sync,no_root_squash,no_subtree_check)
+/var/nfs        192.168.0.101(rw,sync,no_subtree_check)
+(The no_root_squash option makes that /home will be accessed as root. SECURITY RISK)
+
+Whenever we modify /etc/exports, we must run:
+exportfs -a
+
+chkconfig nfs on 
+service rpcbind start
+service nfs start
+
+Mounting The NFS Shares On The Client
+First we create the directories where we want to mount the NFS shares, e.g.:
+mkdir -p /mnt/nfs/home
+mkdir -p /mnt/nfs/var/nfs
+
+mount them as follows:
+mount 192.168.0.100:/home /mnt/nfs/home
+mount 192.168.0.100:/var/nfs /mnt/nfs/var/nfs
+
+Notes: Block NFS Using Iptables
+iptables -I INPUT -s <IP> -p tcp -m tcp --dport 2049 -j DROP
+-A INPUT ! -s 127.0.0.1/32 -p tcp -m tcp --dport 2049 -j DROP
+</pre>
+

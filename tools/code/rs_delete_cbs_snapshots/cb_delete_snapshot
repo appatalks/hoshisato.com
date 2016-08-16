@@ -1,0 +1,10 @@
+#!/bin/bash
+SNAPSHOT=$2
+REGION=$1
+. ./identity
+curl -s \
+-X DELETE \
+-H "Content-Type: application/json" \
+-H "X-Auth-Token: $APITOKEN" \
+-D cb_snapshot_delete.txt \
+https://$REGION.blockstorage.api.rackspacecloud.com/v1/$DDI/snapshots/$SNAPSHOT

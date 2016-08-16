@@ -1,0 +1,9 @@
+## Disable the Server Signature ##
+ServerSignature Off
+
+#################
+# XMLRPC ATTACK #
+#################
+<Files xmlrpc.php>
+        Require all Denied
+</Files>

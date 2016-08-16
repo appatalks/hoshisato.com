@@ -1,0 +1,12 @@
+#RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+#RewriteCond %{REMOTE_ADDR} !^11\.111\.111\.111
+#RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
+#RewriteCond %{DOCUMENT_ROOT}/maintenance.enable -f
+#
+#RewriteCond %{SCRIPT_FILENAME} !maintenance.html
+#RewriteRule ^(.*)$ http://hoshisato.com/tools/maintenance.html [R=503,L]
+#ErrorDocument 503 http://hoshisato.com/tools/maintenance.html
+#Header Set Cache-Control "max-age=0, no-store"

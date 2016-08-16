@@ -1,0 +1,15 @@
+Options +Indexes
+php_flag engine off 
+<IfModule mod_mime.c>
+ AddType text/plain .sh
+ AddType text/plain .conf
+ AddType text/plain .pl
+ AddType text/plain .java
+ AddType text/plain .cpp
+ AddType text/plain .c
+ AddType text/plain .h
+ AddType text/plain .js
+ AddType text/plain .rc
+ AddType text/plain .php
+</IfModule>
+
