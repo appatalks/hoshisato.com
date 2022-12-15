@@ -1,5 +1,5 @@
 #!/bin/bash
-# Creates an index.html web page that displays image contents with a thumbnail image
+# Batch coversion of files to get ready for gallery index
 # Adapted and modified from;
 # User: keirvt - https://www.linuxquestions.org/questions/linux-software-2/browser-directroy-listing-with-thumbnails-4175681907/ 
 #
