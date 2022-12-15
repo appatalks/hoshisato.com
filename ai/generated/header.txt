@@ -1,0 +1,9 @@
+<html>
+<head>
+<link href="css/lightbox.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+
+<body>
+   <h1>AI ART BY HOSHISATO.COM</h1><html>
+
