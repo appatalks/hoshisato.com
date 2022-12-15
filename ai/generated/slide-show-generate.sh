@@ -1,5 +1,5 @@
 #!/bin/bash
-# Generate Slide-Show HTML
+# Generate HTML Gallery
 # Hoshisato.com
 # modified from https://lokeshdhakar.com/projects/lightbox2/#getting-started
 
