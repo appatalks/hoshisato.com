@@ -1,17 +1,17 @@
 #!/bin/bash
-# Batch coversion of files to get ready for gallery index
+# Creates an index.html web page that displays image contents with a thumbnail image
 # Adapted and modified from;
 # User: keirvt - https://www.linuxquestions.org/questions/linux-software-2/browser-directroy-listing-with-thumbnails-4175681907/ 
-#
 
 # Rebuild and Rename all files to number increments.
 rm -fr thumb/*
 rm -fr upscale/*
 rm -fr src/*
 cp import/* .
-find . | grep -v import | grep -v images | grep 'jpeg' | nl -nrz -w3 -v1 | while read n f; do mv "$f" "$n.jpeg"; done
+sync
+find . | grep -v import | grep -v images | grep -v page | grep 'jpeg' | nl -nrz -w3 -v1 | while read n f; do mv "$f" "$n.jpeg" && sync; done
 
-codesrcdir='generated'
+codesrcdir='./'
 thisdomain="https://hoshisato.com"
 
 dname=$1
@@ -34,8 +34,8 @@ processFile() {
           echo Thumb $thumb exists - skipping
        else
           echo "converting $img to thumb-$img"
-          convert -thumbnail 180 $img $thumb
-	  convert -scale 768 $img $upscale
+          convert -thumbnail 180 $img $thumb && sync
+	  convert -scale 768 $img $upscale && sync
        fi
     fi
 }
@@ -60,6 +60,9 @@ then
       for img in *.jpeg; do processFile; done
    fi
 
+echo "Setting EXIF"
+exiftool -author="hoshisato.com | AppaTalks" import/*jpeg 
+exiftool -author="hoshisato.com | AppaTalks" *jpeg 
 echo "Moving files into place"
 mv 768*jpeg upscale/
 mv thumb*jpeg thumb/
@@ -71,4 +74,3 @@ else
    echo "Directory parameter required in calling this program."
    exit
 fi
-
