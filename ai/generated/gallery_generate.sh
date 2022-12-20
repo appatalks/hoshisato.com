@@ -13,8 +13,7 @@ processFile() {
     echo Processing image:$img
 
     if [ ! `echo $img|cut -c1-6` == "768-" ]; then
-#       echo   "         <div style=\"background-image:url(https://hoshisato.com/ai/generated/upscale/$upscale)\"></div>" >> $indexfile
-       echo   "        <a href=\"https://hoshisato.com/ai/generated/$upscale\" data-lightbox=\"stablediffusion\"><img src=thumb$thumb></a>" >> $indexfile
+       echo   "        <a href=$upscale data-lightbox=\"stablediffusion\"><img src=thumb$thumb alt=\"StableDiffusion AI Generated Art\"></a>" >> $indexfile
     fi
 }
 
@@ -67,5 +66,3 @@ else
    echo "Directory parameter required in calling this program."
    exit
 fi
-
-
