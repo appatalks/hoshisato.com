@@ -1,9 +1,27 @@
 <html>
 <head>
+<title>AI Art By HoshiSato.com</title>
+<meta name="description" content="AI Art generated with Stable Diffusion and Custom Models" />
+<meta name="robots" content="index, archive" />
+<meta name="keywords" content="aiart, ai, art, stable diffusion" />
+<link rel="canonical" href="https://hoshisato.com/ai/" />
 <link href="css/lightbox.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 
 <body>
-   <h1>AI ART BY HOSHISATO.COM</h1><html>
-
+   <h1>AI Art By HoshiSato.com</h1>
+	   <h2> Generated with Stable Diffusion and Custom Models. New Art added periodically.</h2>
+   	   <script src="https://apis.google.com/js/platform.js"></script>
+		<div class="g-ytsubscribe" data-channelid="UCznnKKvEvSYbtD2Qrt5OXng" data-layout="full" data-count="default"></div>
+      	<center>
+	<a href="https://hoshisato.com/ai/">I</a> &nbsp
+	<a href="https://hoshisato.com/ai/generated/page/2/">II</a> &nbsp
+	<a href="https://hoshisato.com/ai/generated/page/3/">III</a> &nbsp
+	<a href="https://hoshisato.com/ai/generated/page/4/">IV</a> &nbsp
+	<a href="https://hoshisato.com/ai/generated/page/5/">V</a> &nbsp
+	<a href="https://hoshisato.com/ai/generated/page/6/">VI</a> &nbsp
+	<a href="https://hoshisato.com/ai/generated/page/7/">VII</a> &nbsp
+	<a href="https://hoshisato.com/ai/generated/page/8/">VIII</a> &nbsp
+	</center>
+	   </br>
