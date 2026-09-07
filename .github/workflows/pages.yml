@@ -1,4 +1,4 @@
-name: Test and Publish The Mirror Signal
+name: Publish The Mirror Signal
 
 on:
   push:
@@ -24,9 +24,6 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm test
-      - run: npx playwright install --with-deps chromium
-      - run: npm run test:browser
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

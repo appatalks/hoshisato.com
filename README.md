@@ -197,7 +197,7 @@ Phaser 3 Arcade Physics handles collisions. Art is rendered from original drawin
 The custom domain remains **hoshisato.com**. The original `CNAME` is unchanged and copied into `dist/` along with `.nojekyll`.
 
 1. In repository **Settings > Pages > Build and deployment**, select **GitHub Actions** as the source.
-2. Push reviewed changes to `main`. The included Pages workflow runs the unit tests, browser tests, production build, and deploys the `dist/` artifact.
+2. Push reviewed changes to `main`. The included Pages workflow installs dependencies, builds the production site, and deploys the `dist/` artifact. Tests remain available locally but do not run in the deployment workflow.
 3. Keep the existing domain/DNS settings. GitHub may require its normal domain verification and HTTPS provisioning.
 
 The root source HTML now uses bundled dependencies, so the old "deploy directly from main / root" configuration must be changed to the build workflow. Alternatively, publish the contents of `dist/` with an existing static deployment pipeline. Relative asset URLs also support repository subpaths. The build contains no administrative PHP scripts or legacy credential/configuration examples.
