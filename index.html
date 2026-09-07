@@ -1,58 +1,174 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xml:lang='en' xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Hoshi Sato</title>
-    <meta name="description" content="Hoshi Sato - Star Trek Enterprise" />
-	<meta name="keywords" content="Hoshi, Sato, Linux, Command, line, tools" />
-	<meta name="msvalidate.01" content="43F521FF5D6075596721E017ACC164F7" />
-<!--- To activate Konami: UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT B A -->
-  <script type="text/javascript" src="tools/konami.js"></script>
-  <script type="text/javascript">
-     var konami = new Konami('https://www.instagram.com/reallindapark');       
-  </script>
-<!-------------------------------------------------------------------->
-<!-- <link rel="stylesheet" type="text/css" href="tmp/expand.css"> -->
-</head>
-
-<body>
-
-<!--   
- <div id="wrapper">
-     <div id="header"></div>
-	 <div id="content">
-	</div>
-     <div id="footer">
-	 -->
-	<!--
-       <center>
-	<a href="tools/">Hoshi Sato Tools</a>
-	<a href="http://reedalert.com">!! Reed Alert !!</a>
-	<a href="http://servingbaby.com">Serving Baby</a>
-	<a href="http://stbennett.org">stbennett.org</a>
-       </center>
-       -->
-	   <!--
-     </div>
- </div>
--->   
-<div>
-<center>
-<br>
-   <a href="media/hoshisato.jpg"><img src="media/hoshisatoblu.jpg"  
-   height="" width="512" alt="Hoshi Sato" class="expand" /></a> 
-<br><br>
-<!-- <a href="tools/">Hoshi Sato Tools</a> -->
-<!-- <a href="http://reedalert.com">!! Reed Alert !!</a> -->
-<a href="http://servingbaby.com">Serving Baby</a>
-<a href="http://www.stbennett.org">stbennett.org</a>
-<br>
-</center>
-</div>
-
-   <img align="right" src="images/LindaPark300x300.png"  
-   height="" width="" alt="Hoshi Sato" style="position:absolute; z-index:1; right:90px; bottom:25px;" />
-
-
-<script src="tools/counter.php"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111e22" />
+    <meta
+      name="description"
+      content="Hoshi Sato: The Mirror Signal. An original, family-friendly fan adventure among the stars. Ten worlds, one open channel. Play free in your browser."
+    />
+    <meta name="msvalidate.01" content="43F521FF5D6075596721E017ACC164F7" />
+    <title>Hoshi Sato | The Mirror Signal</title>
+    <link rel="icon" type="image/svg+xml" href="/signal-mark.svg" />
+  </head>
+  <body>
+    <main id="experience">
+      <section id="title-screen" aria-label="The Mirror Signal title screen">
+        <canvas
+          id="title-art"
+          aria-label="Original illustration of Hoshi on the Defiant's observation deck, overlooking a ringed planet"
+        ></canvas>
+        <div class="title-shade"></div>
+        <header class="masthead">
+          <a class="wordmark" href="./" aria-label="Hoshi Sato home"
+            ><span class="signal-glyph" aria-hidden="true">III</span> HOSHISATO<span>.COM</span></a
+          >
+          <div class="header-tools">
+            <span class="edition">AN UNOFFICIAL FAN ADVENTURE</span>
+            <button
+              class="icon-button"
+              data-action="audio"
+              title="Toggle audio"
+              aria-label="Toggle audio"
+            >
+              <i data-lucide="volume-2"></i>
+            </button>
+            <button class="icon-button" data-action="options" title="Options" aria-label="Options">
+              <i data-lucide="sliders-horizontal"></i>
+            </button>
+          </div>
+        </header>
+        <div class="title-copy">
+          <p class="overline">
+            <span class="status-dot"></span> ANOTHER UNIVERSE. ANOTHER POSSIBILITY.
+          </p>
+          <h1>HOSHI<br /><span>SATO</span><span class="title-period">.</span></h1>
+          <p class="game-subtitle"><span></span> THE MIRROR SIGNAL</p>
+          <p class="title-story">
+            An empire full of silence.<br />An Empress with something to say.
+          </p>
+          <div class="play-actions">
+            <button class="primary-button" data-action="play">
+              <i data-lucide="play"></i><span id="play-label">BEGIN YOUR JOURNEY</span
+              ><i data-lucide="arrow-right"></i>
+            </button>
+            <button class="text-button" data-action="missions">
+              <i data-lucide="orbit"></i> Star chart <span id="title-progress">00 / 10</span>
+            </button>
+          </div>
+          <div class="title-secondary">
+            <button data-action="achievements">Achievements</button><span>/</span
+            ><button data-action="controls">Controls</button><span>/</span
+            ><button data-action="archive">The archive</button><span>/</span
+            ><button data-action="credits">Credits</button>
+          </div>
+          <a
+            class="text-button linda-social"
+            href="https://www.instagram.com/reallindapark"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linda's Instagram <i data-lucide="arrow-up-right"></i
+          ></a>
+        </div>
+        <div class="scene-caption">
+          <span class="tiny-cross">+</span>
+          <div>THE DEFIANT<span>OBSERVATION DECK / 2155</span></div>
+          <span class="caption-rule"></span>
+        </div>
+        <button class="autograph-link" data-action="archive">
+          <i data-lucide="feather"></i
+          ><span>A NOTE FROM LINDA PARK<small>A little piece of this site's history</small></span
+          ><i data-lucide="arrow-up-right"></i>
+        </button>
+        <footer class="title-footer">
+          <span><span class="status-dot"></span> ALL FREQUENCIES WELCOME</span
+          ><button data-action="credits">FAN-MADE. FREE TO EXPLORE.</button
+          ><span class="version-label">SIGNAL 01.00</span>
+        </footer>
+      </section>
+      <section id="game-screen" hidden aria-label="Game">
+        <div id="game-view"></div>
+        <div id="hud">
+          <div class="hud-location">
+            <span id="hud-place">THE DEFIANT</span
+            ><strong id="hud-title">A Quiet Coronation</strong>
+            <div class="integrity" aria-label="Signal stability">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="hud-objective">
+            <span id="hud-objective">RESTORE THE RELAYS</span>
+            <div id="relay-dots"></div>
+          </div>
+          <div class="hud-right">
+            <span class="star-count"
+              ><i data-lucide="sparkles"></i><span id="hud-stars">0</span></span
+            ><button
+              class="icon-button"
+              data-action="pause"
+              title="Pause (Escape)"
+              aria-label="Pause"
+            >
+              <i data-lucide="pause"></i>
+            </button>
+          </div>
+        </div>
+        <div class="tool-hud">
+          <i data-lucide="radio"></i>
+          <div>
+            <span id="hud-tool">PULSE KEY</span><small id="hud-ability">Q / CHANGE SIGNAL</small>
+          </div>
+          <div id="tool-meter"></div>
+        </div>
+        <div id="interaction" hidden><kbd>E</kbd><span></span></div>
+        <div id="game-caption" aria-live="polite"></div>
+        <div id="touch-controls" aria-label="Touch game controls">
+          <div class="touch-movement">
+            <button data-touch="left" aria-label="Move left">
+              <i data-lucide="arrow-left"></i></button
+            ><button data-touch="right" aria-label="Move right">
+              <i data-lucide="arrow-right"></i></button
+            ><button data-touch="down" aria-label="Crouch or drop">
+              <i data-lucide="arrow-down"></i>
+            </button>
+          </div>
+          <div class="touch-actions">
+            <button data-touch="cycle" aria-label="Change tool">
+              <i data-lucide="repeat-2"></i></button
+            ><button data-touch="dash" aria-label="Phase step"><i data-lucide="wind"></i></button
+            ><button data-touch="interact" aria-label="Interact"><i data-lucide="hand"></i></button
+            ><button data-touch="signal" aria-label="Send signal">
+              <i data-lucide="radio"></i></button
+            ><button data-touch="shield" aria-label="Signal shield">
+              <i data-lucide="shield"></i></button
+            ><button data-touch="jump" aria-label="Jump"><i data-lucide="arrow-up"></i></button>
+          </div>
+        </div>
+      </section>
+      <div id="loading" hidden role="status">
+        <span class="loading-orbit"></span><strong>Finding your frequency</strong
+        ><span id="loading-detail">Preparing the Defiant...</span>
+      </div>
+      <div id="toast" role="status" aria-live="polite" hidden></div>
+      <dialog id="panel" aria-labelledby="panel-title">
+        <div class="panel-top">
+          <span class="overline" id="panel-eyebrow">THE MIRROR SIGNAL</span
+          ><button class="icon-button" data-action="close" title="Close" aria-label="Close">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <h2 id="panel-title"></h2>
+        <div id="panel-content"></div>
+      </dialog>
+      <noscript
+        ><div class="noscript">
+          The Mirror Signal needs JavaScript to play. The
+          <a href="images/LindaPark300x300.png">original Linda Park autograph</a> and
+          <a href="archive/original-index.html">historical site</a> remain available.
+        </div></noscript
+      >
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

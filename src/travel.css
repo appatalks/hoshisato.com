@@ -1,0 +1,108 @@
+#travel-screen {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+  width: 100%;
+  height: 100svh;
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #0b111b;
+  overflow: hidden;
+}
+#travel-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.travel-top,
+.travel-bottom {
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font:
+    600 12px 'Rajdhani',
+    sans-serif;
+  color: #dbbb84;
+}
+.travel-top {
+  top: 4%;
+}
+.travel-bottom {
+  bottom: 4%;
+}
+.travel-copy {
+  position: absolute;
+  left: 8%;
+  bottom: 20%;
+  max-width: min(670px, 84%);
+  text-shadow: 0 2px 16px #07121e;
+}
+.travel-copy #travel-place {
+  font:
+    600 15px 'Rajdhani',
+    sans-serif;
+  color: #edc98b;
+}
+.travel-copy h2 {
+  font-size: 52px;
+  color: #f2e9d8;
+  margin-bottom: 16px;
+}
+.travel-copy #travel-message {
+  max-width: 460px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #c9d8d5;
+}
+#skip-travel {
+  background: #12202fd9;
+  min-height: 44px;
+}
+@media (max-width: 600px) {
+  .travel-top,
+  .travel-bottom {
+    font-size: 10px;
+    left: 6%;
+    right: 6%;
+  }
+  .travel-top {
+    align-items: flex-start;
+  }
+  .travel-top span {
+    max-width: 55%;
+  }
+  .travel-copy h2 {
+    font-size: 35px;
+  }
+  .travel-copy #travel-message {
+    font-size: 12px;
+  }
+  .travel-copy {
+    bottom: 22%;
+  }
+}
+@media (max-height: 450px) and (orientation: landscape) {
+  .travel-copy h2 {
+    font-size: 30px;
+    margin: 8px 0;
+  }
+  .travel-copy #travel-place {
+    margin: 0;
+    font-size: 11px;
+  }
+  .travel-copy #travel-message {
+    margin: 6px 0;
+    font-size: 11px;
+  }
+  .travel-copy {
+    bottom: 24%;
+  }
+}
